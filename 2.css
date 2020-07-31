@@ -1,0 +1,37 @@
+h1{
+    color: #0000ff;
+    font-size: 36px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+p{
+    text-indent: 48px;
+    font-family: Microsoft JhengHei;
+}
+a{
+    color: red;
+}
+a:hover{
+    font-size: 24px;
+    color: blanchedalmond;
+}
+h2{
+    border-left: red solid 5px;
+    border-bottom: red solid 8px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+ul{
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+.delete{
+    text-decoration: line-through;
+}
+ol{
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+img{
+    border: yellow solid 8px;
+}

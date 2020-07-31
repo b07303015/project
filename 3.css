@@ -1,0 +1,42 @@
+.top{
+    border: gray solid 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+img{
+    padding: 30px;
+}
+.middle{
+    border: red solid 10px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+.middle p{
+    padding: 12px;
+    line-height: 1.5;
+}
+.middle a{
+    display: block;
+    background-color: red;
+    height: 48px;
+    width: 96px;
+    margin: 12px;
+    text-align: center;
+    padding-top: 24px;
+    text-decoration: none;
+}
+.bottom{
+    border-top: pink solid 8px;
+    height: 50px;
+    width: 616px;
+    background-color: pink;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom p{
+    text-align: center;
+}
