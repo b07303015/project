@@ -1,0 +1,188 @@
+@mixin phone(){
+    @media (max-width:576px){
+        @content;
+    }
+}
+@mixin pad(){
+    @media(max-width: 768px){
+        @content;
+    }
+}
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+    padding-bottom: 60px;
+   
+}
+
+.header{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .phone_header{
+        display: none;
+        padding: 33px auto;
+        .subtitle_mb{
+            a{  
+                color: #3F5D45;
+                &:hover{
+                    background: #3F5D45;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        @include pad(){
+            display: block;
+            button{
+                cursor: pointer;
+                background: white;
+                border: none;
+            }
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .pc_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include pad(){
+            display: none;
+        }
+        .logo{
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            width: 220px;
+            height: 40px;
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+            background-repeat: no-repeat;
+        }
+        .subtitle{
+            display: flex;
+            justify-content: space-between;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 10px 30px;
+                    color:#3F5D45;
+                    font-weight: bold;
+                }
+                a:hover{
+                    display: block;
+                    background:#3F5D45;
+                    color: white;    
+                }
+            }
+            button{
+                display: block;
+                cursor: pointer;
+                border: 0px;
+                background: white;
+                margin-left: 80px;    
+            }
+        } 
+    }
+}
+
+.middle{
+    margin-top: 60px;
+    background: #3F5D45;
+    padding: 42px 0;
+    .subscribe{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 840px;
+        @include pad(){
+            flex-direction: column;
+            align-items: center;
+        }
+        .adress{
+            display: flex;
+            justify-content: flex-start;
+            @include pad(){
+                padding-bottom: 30px;
+            }
+            h3{
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: white;
+                padding-top: 5px;
+                margin-left: 20px;
+            }
+        }
+        .search{
+            .mail{
+                padding: 19.5px 44px;
+                border: none;
+                float: left;
+                background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true);
+                background-repeat: no-repeat;
+                background-position: 6% 50%;
+            }
+            .arrow{
+                background: #FFE180;
+                padding: 17px 20px;
+            }
+        }
+    }
+}
+.bottom{
+    background: #EAF0ED;
+    padding: 30px 0;
+    .footer{
+        margin: 0 auto;
+        max-width: 840px;
+        display: flex;
+        justify-content: space-between;
+        @include pad(){
+            justify-content: space-around;
+        }
+        .contact_info{
+            margin-top: 115px;
+            color: #3F5D45;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            @include pad(){
+                margin-top: 39.5px;
+            }
+        }
+        .link{
+            display: flex;
+            justify-content: flex-start;
+            li{
+                margin-right: 8px;   
+            }
+        }
+        .phone_right{
+            display: none;
+            @include pad(){
+                display: block;
+                margin-top: 20px;
+            }
+        }
+        .slogan{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color:  #3F5D45;
+            @include pad(){
+                display: none;
+            }
+            h3{
+                writing-mode: vertical-rl; 
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 1.5;
+            }    
+        }
+    }
+}

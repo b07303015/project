@@ -1,0 +1,21 @@
+@import "MW7project_layout";
+
+
+.chanel_N5{
+    .chanel_pic{
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 20px;
+    }
+    span{
+        font-size: 16px;
+    }
+    button{
+        &:focus{
+            outline: 0;
+        }
+    }
+}

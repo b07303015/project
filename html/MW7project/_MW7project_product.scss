@@ -1,0 +1,31 @@
+@import "MW7project_layout";
+
+.product_list{
+    padding-top: 80px;
+    .item{
+        width: 100%;
+    }
+    button{
+        &:focus{
+            outline: 0;
+        }
+    }
+    a{ 
+        color: $secondary;
+        &:hover{
+            color: $primarydark;
+            text-decoration-line: underline;
+        }
+    }
+}
+.subscribe{
+    background-image: url(image\\bottom_img_mb.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 312px;
+    @include media-breakpoint-up(lg) {
+        background-image: url(image\\bottom_img.png);
+    }
+}

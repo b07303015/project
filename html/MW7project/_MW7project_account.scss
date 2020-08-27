@@ -1,0 +1,41 @@
+@import"MW7project_layout";
+
+.mypage{
+    color: #848484;
+    h3{
+        font-size: 30px;
+    }
+    a{
+        font-size: 16px;
+        &:active{
+            border-bottom: solid 3px $primary;
+        }
+    }
+    h6{
+        span{
+            font-size: 20px;
+        }
+    }
+    li{
+        span{
+            font-size: 16px;
+        }
+    }
+    span{
+        font-size: 14px;
+    }
+    select{
+        padding-left: 10px;
+        padding-top: 4px;
+        padding-bottom:4px;
+        margin-left: 28px;
+    }
+    .address{
+        width: 160px;
+    }
+    input{
+        margin-left: 32px;
+        padding: 5px 0;
+        padding-left: 10px;
+    }
+}

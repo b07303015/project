@@ -1,0 +1,30 @@
+@import "remove";
+@import "bootstrap/bootstrap";
+  
+a{
+    font-size: 20px;
+    text-align: center;
+    &:hover{  
+        text-decoration: none;
+    }
+}
+.header{
+    .mobile{
+        button{
+            display: block;
+            cursor: pointer;
+            border: 0px;
+            background: white;
+            &:hover{
+                border:0px;
+            }
+        }
+    }
+}
+.footer{
+    padding: 9px 0;
+    a{
+        color: white;
+    }
+    
+}

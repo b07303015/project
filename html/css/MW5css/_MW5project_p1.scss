@@ -1,0 +1,113 @@
+@import "remove";
+@import "MW5project_layout";
+@mixin pad() {
+    @media(max-width: 768px){
+        @content;
+    }
+}
+@mixin phone() {
+    @media(max-width: 576px){
+        @content;
+    }
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.container{
+    @include pad(){
+        padding-bottom: 0;
+    }
+}
+.banner_p1{
+    max-width: 940px;
+    height: 460px;
+    background-image: url(https://bit.ly/2P7GhNd); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+        hr{
+            height: 1px;
+            width: 66px;
+            background-color:#3F5D45;
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+        .material-icons{
+            width: 20px;
+             
+        }
+        .md-green { 
+            color: #3F5D45; 
+        }
+    }
+    h2{ 
+        text-align: center;
+        color: #3F5D45;
+        font-size: 48px;
+        margin-bottom: 52px;
+    }
+    a{  
+        padding: 17px 102px;
+        text-decoration: none;
+        font-size: 24px;
+        background-color: #FFE180;
+        color: #3F5D45;
+        font-weight: border;
+        @include pad(){
+            display: none;
+        }
+    }
+}
+.keep_shopping_mobile{
+    a {
+        display: none;
+        @include pad(){
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            width: 100%;
+            background-color: #FFE180;
+            color: #3F5D45;
+            padding: 19px 0;
+            font-size: 24px;
+        }
+    }
+    
+}

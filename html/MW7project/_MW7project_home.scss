@@ -1,0 +1,63 @@
+.home{
+    img{
+        width: 100%;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        font-size: 16px;
+    }
+    li{
+        font-size: 16px;
+    }
+    .banner{
+        background-image: url(image\\home_banner_mb.png);
+        height: 480px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        button{
+            width: 350px;
+            font-size: 32px;
+        }
+        @include media-breakpoint-up(lg) {
+            background-image: url(image\\home_banner.png);
+            height: 870px;
+        }
+    }
+    .makeup{  
+        .ACVC{
+            .sold_out{
+                background-image: url(image\\ACVC.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                span{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .subscribe{
+        background-image: url(image\\bottom_img_mb.png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 312px;
+        @include media-breakpoint-up(lg) {
+            background-image: url(image\\bottom_img.png);
+        }
+    }
+    
+}
